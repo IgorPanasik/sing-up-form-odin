@@ -5,15 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sign-up: The Odin Project</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<div class="wrapper">
 		<main>
 			<div class="sidebar">
-				<img src="images/halie-west-unsplash.jpg" alt="Green leaf plant in close up photography">
 				<div class="sidebar__logo">
 					<img src="images/odin-lined.png" alt="The logotype Odin">
+					<span>ODIN</span>
 				</div>
 				<ul>
 					<li>
@@ -25,47 +26,49 @@
 			</div>
 			<div class="main-content">
 				<div class="describe">
-					<p class="describe-text">
+					<p>
 						This is not a real online service! You know you need something like this in your life to help you realize
 						your
 						deepest dreams.
 						Sign up <em>now</em> to get started.
 					</p>
-					<p class="describe-action">You <em>know</em> you want to</p>
+					<p>You <em>know</em> you want to.</p>
 				</div>
 				<form>
 					<fieldset class="form-group">
 						<h1>
 							Let's do this!
 						</h1>
-						<p class="field">
-							<label for="first-name">First Name</label>
-							<input id="first-name" type="text" name="first_name" autocomplete="name" required>
-						</p>
-						<p class="field">
-							<label for="last-name">Last Name</label>
-							<input id="last-name" type="text" name="last_name" autocomplete="additional-name">
-						</p>
+						<div class="form__section-inputs">
+							<p class="form-field">
+								<label for="first-name">First Name</label>
+								<input id="first-name" type="text" name="first_name" autocomplete="name">
+							</p>
+							<p class="form-field">
+								<label for="last-name">Last Name</label>
+								<input id="last-name" type="text" name="last_name" autocomplete="additional-name">
+							</p>
 
-						<p class="field">
-							<label for="email">Email</label>
-							<input id="email" type="email" name="user_email" autocomplete="email" required>
-						</p>
+							<p class="form-field">
+								<label for="email">Email</label>
+								<input id="email" type="email" name="user_email" autocomplete="email">
+							</p>
 
-						<p class="field">
-							<label for="phone">Phone Number</label>
-							<input id="phone" type="tel" name="user_phone" autocomplete="tel" required>
-						</p>
+							<p class="form-field">
+								<label for="phone">Phone Number</label>
+								<input id="phone" type="tel" name="user_phone" autocomplete="tel">
+							</p>
 
-						<p class="field">
-							<label for="password">First Name</label>
-							<input id="password" type="password" name="user_email" autocomplete="new-password">
-						</p>
+							<p class="form-field">
+								<label for="password">Password</label>
+								<input id="password" type="password" name="user_email" autocomplete="new-password" required>
+							</p>
 
-						<p class="field">
-							<label for="re-password">First Name</label>
-							<input id="re-password" type="password" name="user_email">
-						</p>
+							<p class="form-field">
+								<label for="re-password">Confirm Password</label>
+								<input id="re-password" type="password" name="user_email" required>
+							</p>
+						</div>
 					</fieldset>
 					<button type="submit">Create Account</button>
 					<p>Already have an account? <a href="#">Log in</a></p>
