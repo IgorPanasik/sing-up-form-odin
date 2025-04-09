@@ -123,6 +123,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
+	align-self: flex-start;
 	background-image: url('images/halie-west-unsplash.jpg');
 	object-fit: cover;
 	background-size: cover;
@@ -171,7 +172,7 @@ ul :is(li, a) {
 	p {
 		line-height: 1.3;
 		width: 48ch;
-		font-weight: medium;
+		font-weight: 500;
 		margin-bottom: 1.2em;
 	}
 }
